@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/ess2?family=Poppins&dsiplay=swap" rel="stylesheet">
+    <title>Forget Password UI Using CSS- @code.scientist x @codingturque</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 10rem;
+        }
+        .container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .card {
+            background: url(./4.jpeg) center center / cover;
+            border-radius: 10px;
+            height: 20rem;
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+            z-index: -1;
+            cursor: pointer;
+            transition: 0.3s;
+            margin: 20px;
+        }
+        .card:hover {
+            transform: scale(1.1);
+        }
+        .details {
+            position: absolute;
+            bottom: -70px;
+            left: 0;
+            padding: 20px;
+            background: linear-gradient(0deg,black,transparent);
+            transition: 0.3s ease;
+        }
+        .card:hover .details {
+            bottom: 0;
+        }
+        .details p {
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="details">
+                <h2>Deluxe</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
